@@ -4,7 +4,11 @@ Docker Moloch container
 
 Image is based on the [debian](https://registry.hub.docker.com/u/debian/) base image
 
-## Docker usage
+## Docker image size
+
+[![Latest](https://badge.imagelayers.io/k0st/moloch.svg)](https://imagelayers.io/?images=k0st/moloch:latest 'latest')
+
+## Docker image usage
 
 ```
 docker run k0st/moloch [capture]
