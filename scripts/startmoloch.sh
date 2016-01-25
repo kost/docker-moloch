@@ -22,14 +22,11 @@ else
 	nohup ./run_capture.sh
 fi
 
-echo 
+echo
 echo "How to import pcap?"
 echo " - docker start -v /path/to/host/dir/with/pcap:/data/pcap:rw k0st/moloch"
-echo " - docker exec container_id /data/moloch/bin/moloch_capture -r /data/pcap/sniff.pcap -t mysniff --copy"
-echo 
+echo " - docker exec container_id /data/moloch/bin/moloch-capture -r /data/pcap/sniff.pcap -t mysniff --copy"
+echo
 echo "PLEASE ignore error about mising log file. It's standard moloch start script"
 echo "Starting viewer. Go with https to port 8005 of container."
 ./run_viewer.sh
-
-
-
