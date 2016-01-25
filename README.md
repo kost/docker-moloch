@@ -25,9 +25,6 @@ docker run k0st/moloch capture
 Run viewer and import pcap to analyze:
 
 ```
-docker run -v /path/to/host/pcap:/data/pcap:rw k0st/moloch 
-docker exec containerid /data/moloch/bin/moloch_capture -r /data/pcap/sniff.pcap -t mysniff
+docker run -v /path/to/host/pcap:/data/pcap:rw k0st/moloch
+docker exec containerid /data/moloch/bin/moloch-capture -r /data/pcap/sniff.pcap -t mysniff
 ```
-
-
-
